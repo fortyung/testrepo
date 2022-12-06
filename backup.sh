@@ -28,13 +28,6 @@ currentTS=`date +%s`
 # [TASK 4]
 backupFileName="backup-$currentTS.tar.gz"
 
-# We're going to:
-  # 1: Go into the target directory
-  # 2: Create the backup file
-  # 3: Move the backup file to the destination directory
-
-# To make things easier, we will define some useful variables...
-
 # [TASK 5]
 origAbsPath=`pwd`
 
@@ -61,5 +54,3 @@ done
 
 tar -czvf $backupFileName ${toBackup[@]} # [TASK 12]
 mv $backupFileName $destAbsPath # [TASK 13]
-
-# Congratulations! You completed the final project for this course!
